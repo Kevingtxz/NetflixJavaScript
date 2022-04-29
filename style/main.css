@@ -1,0 +1,112 @@
+:root {
+    --red: #E50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* base */
+body {
+    background: var(--black);
+    
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    margin-right: 10px;
+
+    color: #AAA;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Main Movie */
+.main-movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('../img/main/sonic1.jpg');
+    background-size: cover;
+    
+    height: 400px;
+    font-size: 16px;
+}
+
+.main-movie .description {
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+
+.main-movie .title {
+    margin-top: 15%;
+
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.button {
+    padding: 15px 30px;
+    margin-right: 15px;
+
+    border: none;
+    
+    background-color: rgba(0,0,0,.50);
+
+    font-size: 12px;
+    color: white;
+    
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.main-movie .container {
+    width: 70%;
+}
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.movie-carousel {
+    margin-top: 5px;
+}
